@@ -9,7 +9,7 @@ import { TaskMgmtComponent } from './task-mgmt/task-mgmt.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent, canActivate: [AuthGuard]},
-  {path: 'login', component: LoginComponent},
+  {path: '', component: LoginComponent},
   { path: 'signup', component: SignupComponent },
   { path: 'otp', component: OtpComponent },
   { path: 'tast-mgmt', component: TaskMgmtComponent }

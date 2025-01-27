@@ -135,6 +135,6 @@ export class HomeComponent {
 
   logOut(){
     localStorage.removeItem('logedinInfo');
-     this.router.navigateByUrl('/login')
+     this.router.navigateByUrl('')
   }
 }

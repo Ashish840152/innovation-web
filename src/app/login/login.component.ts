@@ -32,7 +32,7 @@ export class LoginComponent {
             localStorage.setItem('authToken', result.response.token);
             const userInfo = JSON.stringify(result.response.userData);
             localStorage.setItem('logedinInfo', userInfo);
-            this.router.navigate(['']);
+            this.router.navigate(['/home']);
             // alert(result.message);
             this.toastr.success(result.message)
 
