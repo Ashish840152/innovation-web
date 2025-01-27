@@ -1,0 +1,29 @@
+  <div class="auth-wrapper">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">
+                OTP
+              </h4>
+              <form [formGroup]="otpForm" (ngSubmit)="onSubmit()">
+                <mat-form-field class="full-width" appearance="outline">
+                  <mat-label>OTP</mat-label>
+                  <input matInput formControlName="otp" maxlength="4">
+                  <mat-error *ngIf="otpForm.get('otp')?.invalid && otpForm.get('otp')?.touched">
+                    A valid 4-digit OTP is required
+                  </mat-error>
+                </mat-form-field>
+
+                <button mat-raised-button color="primary" class="w-100 py-4" type="submit" [disabled]="otpForm.invalid">Submit</button>
+              </form>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

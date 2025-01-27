@@ -1,0 +1,15 @@
+.heading-title{
+  padding: 20px;
+  background-color: #ff7858;
+}
+
+.heading-title h1{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.custom-table{
+  border: 1px solid gray;
+  border-radius: 8px
+}
